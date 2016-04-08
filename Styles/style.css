@@ -1,0 +1,75 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Calibri;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.75em;
+  text-align: center
+}
+
+.container1,.container2,.container3 {
+  position : relative;
+  padding : 20px;
+  border : 1px solid black;
+  margin : 10px;
+  background-color :  #C0C0C0;
+  overflow : auto;
+}
+
+.title1, .title2, .title3 {
+  position : absolute;
+  border: 1px solid black;
+  font-size: 1.25em;
+  top : 0px;
+  right : 0px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.title1 {
+  background-color : #da9397;
+}
+
+.title2 {
+  background-color : #c93241;
+  color : white;
+}
+
+.title3 {
+  background-color : #e4d493;
+}
+
+
+
+/* Default screen size: desktop devices (992px and above) */
+.section1,.section2,.section3{
+  width:33.3%;
+  float : left;
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .section1 , .section2{
+    width : 50%;
+  }
+  .section2 {
+    clear : right;
+  }
+  .section3 {
+    width : 100%;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  .section1, .section2, .section3{
+    width : 100%;
+    float : none;
+  }
+}
