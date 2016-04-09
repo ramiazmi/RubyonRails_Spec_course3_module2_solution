@@ -22,7 +22,8 @@ h1 {
 
 .title1, .title2, .title3 {
   position : absolute;
-  border: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   font-size: 1.25em;
   top : 0px;
   right : 0px;
